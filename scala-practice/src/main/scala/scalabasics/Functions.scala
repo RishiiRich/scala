@@ -45,4 +45,32 @@ object Functions extends App {
 
   println(aBigFunction(5))
 
+  /*
+    1. A Greeting Function(name,age) => "Hi, my name is $name and I am $age years old"
+    2. Factorial Function 1*2*3*4*...*n
+    3. A Fibonacci function
+        f(1) = 1
+        f(2) = 1
+        f(n) = f(n-1) + f(n-2)
+    4. test if the number is prime
+    */
+
+  //1. A Greeting Function
+  def aGreetingFunction(name: String, age: Int) : Unit = {
+    println("Hi, My Name is " + name + " and I am "+ age + " years old")
+  }
+  aGreetingFunction("Rishi", 30)
+
+  //2. Factorial Function
+  def computeFactorial(num: Long): Long = {
+    if(num == 1) num
+    else num * computeFactorial(num - 1)
+  }
+  println("Factorial of 5 is " + computeFactorial(5))
+
+  println("Factorial of 20 is " + computeFactorial(20))
+
+  //3. Fibonacci Series
+
+
 }
