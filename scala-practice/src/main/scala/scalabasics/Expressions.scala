@@ -48,7 +48,7 @@ object Expressions extends App {
   println(aWierdVariable)
 
   //side effects : println, while, reassigning
-
+  // Expressions returning Unit are side effects
 
   //Code Blocks
 
